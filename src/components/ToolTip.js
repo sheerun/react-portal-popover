@@ -1,5 +1,6 @@
 import React from 'react';
-import Portal from 'react-portal';
+import PropTypes from 'prop-types';
+import { Portal } from 'react-portal';
 
 import PositionProvider from './PositionProvider';
 
@@ -61,17 +62,17 @@ const ToolTip = (props) => {
 };
 
 ToolTip.propTypes = {
-  isOpened: React.PropTypes.bool,
-  readonly: React.PropTypes.bool,
-  small: React.PropTypes.bool,
-  onClose: React.PropTypes.func,
-  trigger: React.PropTypes.object,
-  id: React.PropTypes.string,
-  children: React.PropTypes.node,
-  label: React.PropTypes.string,
-  position: React.PropTypes.string,
-  size: React.PropTypes.number,
-  options: React.PropTypes.object,
+  isOpened: PropTypes.bool,
+  readonly: PropTypes.bool,
+  small: PropTypes.bool,
+  onClose: PropTypes.func,
+  trigger: PropTypes.object,
+  id: PropTypes.string,
+  children: PropTypes.node,
+  label: PropTypes.string,
+  position: PropTypes.string,
+  size: PropTypes.number,
+  options: PropTypes.object,
 };
 
 export default ToolTip;

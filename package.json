@@ -58,11 +58,12 @@
     "webpack-hot-middleware": "^2.12.2"
   },
   "peerDependencies": {
-    "react": "^15.3.0",
-    "react-dom": "^15.3.0"
+    "react": "15-16",
+    "react-dom": "15-16"
   },
   "dependencies": {
-    "react-portal": "^3.0.0"
+    "prop-types": "^15.6.0",
+    "react-portal": "^4.1.2"
   },
   "nyc": {
     "sourceMap": false,

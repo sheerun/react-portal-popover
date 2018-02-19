@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { uniqueId } from '../utils';
 
 class OverlayTrigger extends React.Component {
@@ -130,12 +131,12 @@ class OverlayTrigger extends React.Component {
 }
 
 OverlayTrigger.propTypes = {
-  closeOnScroll: React.PropTypes.bool,
-  children: React.PropTypes.element.isRequired,
-  overlay: React.PropTypes.object.isRequired,
-  hideLabel: React.PropTypes.string,
-  showLabel: React.PropTypes.string,
-  label: React.PropTypes.string,
+  closeOnScroll: PropTypes.bool,
+  children: PropTypes.element.isRequired,
+  overlay: PropTypes.object.isRequired,
+  hideLabel: PropTypes.string,
+  showLabel: PropTypes.string,
+  label: PropTypes.string,
 };
 
 export default OverlayTrigger;

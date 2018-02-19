@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ToolTipArrow from './ToolTipArrow';
 
 import { DEFAULT_ARROW_MARGIN, POSITION, SIZE, BOUNDARY, CLASSES } from '../constants';
@@ -297,17 +298,17 @@ class PositionProvider extends React.Component {
 }
 
 PositionProvider.propTypes = {
-  children: React.PropTypes.node,
-  target: React.PropTypes.object,
-  options: React.PropTypes.object,
-  position: React.PropTypes.string,
-  label: React.PropTypes.string,
-  id: React.PropTypes.string,
-  arrowSize: React.PropTypes.number,
-  arrowOffset: React.PropTypes.number,
-  boundary: React.PropTypes.number,
-  classes: React.PropTypes.string,
-  style: React.PropTypes.object,
+  children: PropTypes.node,
+  target: PropTypes.object,
+  options: PropTypes.object,
+  position: PropTypes.string,
+  label: PropTypes.string,
+  id: PropTypes.string,
+  arrowSize: PropTypes.number,
+  arrowOffset: PropTypes.number,
+  boundary: PropTypes.number,
+  classes: PropTypes.string,
+  style: PropTypes.object,
 };
 
 export default PositionProvider;

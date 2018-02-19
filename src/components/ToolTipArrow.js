@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { capitalize } from '../utils';
 import { POSITION } from '../constants';
 
@@ -49,8 +50,8 @@ const ToolTipArrow = (props) => {
 };
 
 ToolTipArrow.propTypes = {
-  options: React.PropTypes.object,
-  foreground: React.PropTypes.bool,
+  options: PropTypes.object,
+  foreground: PropTypes.bool,
 };
 
 export default ToolTipArrow;
